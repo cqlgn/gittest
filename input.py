@@ -10,7 +10,6 @@ url = 'https://jinshuju.net/f/EwZkQr'
 res = requests.get(url, headers=headers).text
 #print(res)
 print (type(res))
-# repatern = "apiCode":"field_6"
 regular= re.findall(r'"apiCode":"(field_\d)',res)
 for filed in regular:
     print(filed)
